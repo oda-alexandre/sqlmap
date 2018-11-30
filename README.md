@@ -37,7 +37,7 @@ docker run -ti --name sqlmap -v ${HOME}:/home/sqlmap alexandreoda/sqlmap /bin/ba
 
 ## UTILISATION
 
-Pour utiliser sqlmap associez le a proxychains
+Pour utiliser sqlmap associez le à proxychains
 
 ```
 sudo proxychains sqlmap -u https://votresite.com
