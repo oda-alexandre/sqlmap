@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 sudo \
 tor \
 privoxy \
+proxychains \
 sqlmap
 
 RUN useradd -d /home/sqlmap -m sqlmap && \
