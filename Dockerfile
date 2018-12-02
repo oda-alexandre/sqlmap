@@ -1,4 +1,4 @@
-FROM httpd:alpine
+FROM debian:stretch-slim
 
 MAINTAINER https://oda-alexandre.github.io
 
@@ -22,6 +22,7 @@ php \
 python \
 tor \
 privoxy \
+apache2 \
 sqlmap \
 metasploit-framework
 
