@@ -9,7 +9,6 @@
 - [Introduction](#INTRODUCTION)
 - [Prerequis](#PREREQUIS)
 - [Installation](#INSTALLATION)
-- [Utilisation](#UTILISATION)
 - [License](#LICENSE)
 
 
@@ -20,7 +19,7 @@
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [sqlmap](http://sqlmap.org) avec interface graphique web en php pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/sqlmap/) public.
+Ce repository contient le fichier Dockerfile de [sqlmap](http://sqlmap.org) avec interface graphique web pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/sqlmap/) public.
 
 
 ## PREREQUIS
@@ -31,10 +30,15 @@ Installer [Docker](https://www.docker.com)
 ## INSTALLATION
 
 ```
-docker run -ti --name sqlmap -v ${HOME}:/home/sqlmap alexandreoda/sqlmap /bin/bash
+mkdir $HOME/sqlmap
+docker run -d --name sqlmap -v ${HOME}/sqlmap:/home/sqlmap/.sqlmap -v ${HOME}/sqlmap:/var/www/sqlmap -v ${HOME}/sqlmap:/etc/sqlmap alexandreoda/sqlmap
 ```
 
 lien vers sqlmap http://127.0.0.1/sqlmap/index.php
+
+ID        = sqlmap
+
+PASSWORD  = sqlmap
 
 
 ## LICENSE
