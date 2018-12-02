@@ -23,8 +23,8 @@ WORKDIR /home/sqlmap
 
 RUN git clone https://github.com/sqlmapproject/sqlmap.git && \
 git clone https://github.com/Hood3dRob1n/SQLMAP-Web-GUI.git && \
-mv SQLMAP-Web-GUI/sqlmap /var/www/ && \
-rm -rf SQLMAP-Web-GUI/
+sudo mv SQLMAP-Web-GUI/sqlmap /var/www/ && \
+sudo rm -rf SQLMAP-Web-GUI/
 
 RUN sudo rm -f /etc/privoxy/config && \
 sudo rm -f /etc/tor/torcc && \
