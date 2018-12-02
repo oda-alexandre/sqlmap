@@ -26,7 +26,7 @@ apache2 \
 sqlmap \
 metasploit-framework
 
-COPY ./includes/sqlmap /var/www/
+COPY ./includes/sqlmap /var/www/sqlmap
 
 RUN mkdir /tmp/sqlmap
 
