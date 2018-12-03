@@ -39,4 +39,4 @@ git
 
 WORKDIR /home/sqlmap/sqlmap
 
-CMD sudo service tor start && sudo service privoxy start && sudo service apache2 start && sqlmapapi -s
+CMD sudo service tor start && sudo service privoxy start && sudo service apache2 start && sqlmapapi.py -s
