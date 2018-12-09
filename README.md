@@ -19,7 +19,7 @@
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [sqlmap](http://sqlmap.org) avec interface graphique web pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/sqlmap/) public.
+Ce repository contient le fichier Dockerfile de [sqlmap](http://sqlmap.org) avec interface graphique web [SQLMAP-Web-GUI](https://github.com/Hood3dRob1n/SQLMAP-Web-GUI) pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/sqlmap/) public.
 
 
 ## PREREQUIS
@@ -31,7 +31,7 @@ Installer [Docker](https://www.docker.com)
 
 ```
 mkdir $HOME/sqlmap
-docker run -d --name sqlmap -v ${HOME}/sqlmap:/home/sqlmap/sqlmap -v ${HOME}/sqlmap:/var/www/sqlmap alexandreoda/sqlmap
+docker run -d --name sqlmap --network host -v ${HOME}/sqlmap:/home/sqlmap -v ${HOME}/sqlmap:/var/www/sqlmap alexandreoda/sqlmap
 ```
 
 lien vers sqlmap http://127.0.0.1/sqlmap/index.php
