@@ -28,7 +28,7 @@ sqlmap \
 metasploit-framework
 
 RUN git clone https://github.com/Hood3dRob1n/SQLMAP-Web-GUI.git && \
-mv SQLMAP-Web-GUI/sqlmap /var/www/ && \
+mv SQLMAP-Web-GUI/sqlmap /var/www/html && \
 rm -rf SQLMAP-Web-GUI/
 
 RUN mkdir /tmp/sqlmap
