@@ -31,14 +31,8 @@ Installer [Docker](https://www.docker.com)
 
 ```
 mkdir $HOME/sqlmap
-docker run -d --name sqlmap --network host -v ${HOME}/sqlmap:/home/sqlmap -v ${HOME}/sqlmap:/var/www/sqlmap alexandreoda/sqlmap
+docker run -ti --name sqlmap -v ${HOME}:/home/sqlmap alexandreoda/sqlmap /bin/bash
 ```
-
-lien vers sqlmap http://127.0.0.1/sqlmap/index.php
-
-ID        = admin
-
-PASSWORD  = admin
 
 
 ## LICENSE

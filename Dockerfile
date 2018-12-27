@@ -9,12 +9,8 @@ apt-transport-https \
 gnupg \
 pgpgpg \
 dirmngr \
-apt-utils \
 xz-utils \
 sudo \
-php \
-python \
-git \
 wget
 
 # AJOUT DES REPOS kali-rolling non-free DANS LE FICHIER /etc/apt/sources.list
@@ -26,15 +22,8 @@ wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 RUN apt-get update && apt-get install --no-install-recommends -y \
 tor \
 privoxy \
-apache2 \
 sqlmap \
 metasploit-framework
-
-RUN git clone https://github.com/Hood3dRob1n/SQLMAP-Web-GUI.git && \
-mv SQLMAP-Web-GUI/sqlmap /var/www/html && \
-rm -rf SQLMAP-Web-GUI/
-
-RUN mkdir /tmp/sqlmap
 
 # AJOUT UTILISATEUR
 RUN useradd -d /home/sqlmap -m sqlmap && \
@@ -54,16 +43,14 @@ echo "forward-socks4a / localhost:9050 ." | sudo tee -a /etc/privoxy/config && \
 echo "SOCKSPort localhost:9050" | sudo tee -a /etc/tor/torcc
 
 # NETTOYAGE
-RUN sudo apt-get --purge autoremove -y \
-git \
-wget && \
+RUN sudo apt-get --purge autoremove -y && \
 sudo apt-get autoclean -y && \
 sudo rm /etc/apt/sources.list && \
 sudo rm -rf /var/cache/apt/archives/* && \
 sudo rm -rf /var/lib/apt/lists/*
 
 # SELECTION ESPACE DE TRAVAIL
-WORKDIR /var/www/sqlmap
+WORKDIR /home/sqlmap
 
 # COMMANDE AU DEMARRAGE DU CONTENEUR
-CMD sudo service tor start && sudo service privoxy start && sudo service apache2 start && /usr/bin/sqlmapapi -s
+CMD /bin/bash
