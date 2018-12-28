@@ -19,7 +19,7 @@
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [sqlmap](http://sqlmap.org) avec interface graphique web [SQLMAP-Web-GUI](https://github.com/Hood3dRob1n/SQLMAP-Web-GUI) pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/sqlmap/) public.
+Ce repository contient le fichier Dockerfile de [sqlmap](http://sqlmap.org) pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/sqlmap/) public.
 
 
 ## PREREQUIS
