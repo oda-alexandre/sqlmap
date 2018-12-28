@@ -31,7 +31,7 @@ Installer [Docker](https://www.docker.com)
 
 ```
 mkdir $HOME/sqlmap
-docker run -ti --name sqlmap -v ${HOME}:/home/sqlmap alexandreoda/sqlmap /bin/bash
+docker run -ti --name sqlmap -v ${HOME}/sqlmap:/home/sqlmap -v ${HOME}/sqlmap:/etc/sqlmap -v ${HOME}/sqlmap:/usr/share/sqlmap alexandreoda/sqlmap /bin/bash
 ```
 
 
