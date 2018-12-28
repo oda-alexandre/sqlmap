@@ -11,6 +11,7 @@ pgpgpg \
 dirmngr \
 xz-utils \
 sudo \
+python \
 wget
 
 # AJOUT DES REPOS kali-rolling non-free DANS LE FICHIER /etc/apt/sources.list
@@ -22,6 +23,7 @@ wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 RUN apt-get update && apt-get install --no-install-recommends -y \
 tor \
 privoxy \
+proxychains \
 sqlmap \
 metasploit-framework
 
