@@ -55,4 +55,4 @@ sudo rm -rf /var/lib/apt/lists/*
 WORKDIR /home/sqlmap
 
 # COMMANDE AU DEMARRAGE DU CONTENEUR
-CMD /bin/bash
+CMD sqlmap --h
