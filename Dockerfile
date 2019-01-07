@@ -16,13 +16,8 @@ privoxy \
 proxychains \
 wget
 
-# AJOUT DES REPOS kali-rolling non-free DANS LE FICHIER /etc/apt/sources.list
-RUN echo 'deb https://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
-echo 'deb-src https://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
-wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
-
 # INSTALLATION DE L'APPLICATION
-RUN apt-get update && apt-get install -y \
+RUN apt-get install -y \
 sqlmap
 
 # AJOUT UTILISATEUR
