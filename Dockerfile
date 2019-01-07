@@ -11,7 +11,9 @@ pgpgpg \
 dirmngr \
 xz-utils \
 sudo \
-python \
+tor \
+privoxy \
+proxychains \
 wget
 
 # AJOUT DES REPOS kali-rolling non-free DANS LE FICHIER /etc/apt/sources.list
@@ -20,12 +22,8 @@ echo 'deb-src https://http.kali.org/kali kali-rolling main contrib non-free' >> 
 wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 
 # INSTALLATION DE L'APPLICATION
-RUN apt-get update && apt-get install --no-install-recommends -y \
-tor \
-privoxy \
-proxychains \
-sqlmap \
-metasploit-framework
+RUN apt-get update && apt-get install -y \
+sqlmap
 
 # AJOUT UTILISATEUR
 RUN useradd -d /home/sqlmap -m sqlmap && \
@@ -55,4 +53,4 @@ sudo rm -rf /var/lib/apt/lists/*
 WORKDIR /home/sqlmap
 
 # COMMANDE AU DEMARRAGE DU CONTENEUR
-CMD sqlmap --h
+CMD /bin/bash
