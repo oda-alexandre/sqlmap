@@ -13,8 +13,7 @@ xz-utils \
 sudo \
 tor \
 privoxy \
-proxychains \
-wget
+proxychains
 
 # INSTALLATION DE L'APPLICATION
 RUN apt-get install -y \
