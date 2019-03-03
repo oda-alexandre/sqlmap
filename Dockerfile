@@ -1,6 +1,10 @@
 FROM debian:stretch-slim
 
-MAINTAINER https://oda-alexandre.github.io
+MAINTAINER https://oda-alexandre.com
+
+# VARIABLES
+ENV USER sqlmap
+ENV DEBIAN_FRONTEND noninteractive
 
 # INSTALLATION DES PREREQUIS
 RUN apt-get update && apt-get install --no-install-recommends -y \
@@ -13,19 +17,22 @@ xz-utils \
 sudo \
 tor \
 privoxy \
-proxychains
+proxychains && \
 
 # INSTALLATION DE L'APPLICATION
 RUN apt-get install -y \
-sqlmap
+sqlmap && \
 
 # AJOUT UTILISATEUR
-RUN useradd -d /home/sqlmap -m sqlmap && \
-passwd -d sqlmap && \
-adduser sqlmap sudo
+useradd -d /home/${USER} -m ${USER} && \
+passwd -d ${USER} && \
+adduser ${USER} sudo
 
 # SELECTION UTILISATEUR
-USER sqlmap
+USER ${USER}
+
+# SELECTION ESPACE DE TRAVAIL
+WORKDIR /home/${USER}
 
 # CONFIGURATION TOR & PRIVOXY
 RUN sudo rm -f /etc/privoxy/config && \
@@ -42,9 +49,6 @@ sudo apt-get autoclean -y && \
 sudo rm /etc/apt/sources.list && \
 sudo rm -rf /var/cache/apt/archives/* && \
 sudo rm -rf /var/lib/apt/lists/*
-
-# SELECTION ESPACE DE TRAVAIL
-WORKDIR /home/sqlmap
 
 # COMMANDE AU DEMARRAGE DU CONTENEUR
 CMD /bin/bash

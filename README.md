@@ -1,25 +1,30 @@
 # SQLMAP
 
-![sqlmap](https://raw.githubusercontent.com/oda-alexandre/sqlmap/master/img/logo-sqlmap.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/sqlmap/master/img/logo-docker.png)
+[![dockeri.co](https://dockeri.co/image/alexandreoda/sqlmap)](https://hub.docker.com/r/alexandreoda/sqlmap)
 
 
 ## INDEX
 
-- [Build Docker](#BUILD)
+- [Badges](#BADGES)
 - [Introduction](#INTRODUCTION)
 - [Prerequis](#PREREQUIS)
 - [Installation](#INSTALLATION)
 - [License](#LICENSE)
 
 
-## BUILD DOCKER
+## BADGES
 
-[![sqlmap docker build](https://img.shields.io/docker/build/alexandreoda/sqlmap.svg)](https://hub.docker.com/r/alexandreoda/sqlmap)
+[![version](https://images.microbadger.com/badges/version/alexandreoda/sqlmap.svg)](https://microbadger.com/images/alexandreoda/sqlmap)
+[![size](https://images.microbadger.com/badges/image/alexandreoda/sqlmap.svg)](https://microbadger.com/images/alexandreoda/sqlmap")
+[![build](https://img.shields.io/docker/build/alexandreoda/sqlmap.svg)](https://hub.docker.com/r/alexandreoda/sqlmap)
+[![automated](https://img.shields.io/docker/automated/alexandreoda/sqlmap.svg)](https://hub.docker.com/r/alexandreoda/sqlmap)
 
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [sqlmap](http://sqlmap.org) pour [docker](https://www.docker.com), mis à jour automatiquement dans le [docker hub](https://hub.docker.com/r/alexandreoda/sqlmap/) public.
+Ce repository contient le fichier Dockerfile de [sqlmap](http://sqlmap.org)
+
+Mis à jour automatiquement dans le [docker hub public](https://hub.docker.com/r/alexandreoda/sqlmap/).
 
 
 ## PREREQUIS
