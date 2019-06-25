@@ -1,6 +1,6 @@
 # SQLMAP
 
-[![dockeri.co](https://dockeri.co/image/alexandreoda/sqlmap)](https://hub.docker.com/r/alexandreoda/sqlmap)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sqlmap_logo.png/800px-Sqlmap_logo.png" />
 
 
 ## INDEX
@@ -14,10 +14,7 @@
 
 ## BADGES
 
-[![version](https://images.microbadger.com/badges/version/alexandreoda/sqlmap.svg)](https://microbadger.com/images/alexandreoda/sqlmap)
-[![size](https://images.microbadger.com/badges/image/alexandreoda/sqlmap.svg)](https://microbadger.com/images/alexandreoda/sqlmap")
-[![build](https://img.shields.io/docker/build/alexandreoda/sqlmap.svg)](https://hub.docker.com/r/alexandreoda/sqlmap)
-[![automated](https://img.shields.io/docker/automated/alexandreoda/sqlmap.svg)](https://hub.docker.com/r/alexandreoda/sqlmap)
+[![pipeline status](https://gitlab.com/oda-alexandre/sqlmap/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/sqlmap/commits/master)
 
 
 ## INTRODUCTION
