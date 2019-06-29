@@ -7,8 +7,8 @@
 
 - [Badges](#BADGES)
 - [Introduction](#INTRODUCTION)
-- [Prerequis](#PREREQUIS)
-- [Installation](#INSTALLATION)
+- [Prerequisites](#PREREQUISITESITES)
+- [Install](#INSTALL)
 - [License](#LICENSE)
 
 
@@ -19,17 +19,25 @@
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [sqlmap](http://sqlmap.org)
+Docker image of :
 
-Mis à jour automatiquement dans le [docker hub public](https://hub.docker.com/r/alexandreoda/sqlmap/).
+- [sqlmap](http://sqlmap.org)
+
+Continuous integration on :
+
+- [gitlab](https://gitlab.com/oda-alexandre/android-studio/pipelines)
+
+Automatically updated on :
+
+- [docker hub public](https://hub.docker.com/r/alexandreoda/sqlmap/)
 
 
-## PREREQUIS
+## PREREQUISITES
 
-Installer [docker](https://www.docker.com)
+Use [docker](https://www.docker.com)
 
 
-## INSTALLATION
+## INSTALL
 
 ```
 docker run -ti --rm --name sqlmap -v ${HOME}:/home/sqlmap alexandreoda/sqlmap
@@ -38,4 +46,4 @@ docker run -ti --rm --name sqlmap -v ${HOME}:/home/sqlmap alexandreoda/sqlmap
 
 ## LICENSE
 
-[![GPLv3+](http://gplv3.fsf.org/gplv3-127x51.png)](https://github.com/oda-alexandre/sqlmap/blob/master/LICENSE)
+[![GPLv3+](http://gplv3.fsf.org/gplv3-127x51.png)](https://gitlab.com/oda-alexandre/sqlmap/blob/master/LICENSE)
