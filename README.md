@@ -1,6 +1,6 @@
 # SQLMAP
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sqlmap_logo.png/800px-Sqlmap_logo.png" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sqlmap_logo.png/800px-Sqlmap_logo.png" width="200" height="200"/>
 
 
 ## INDEX
