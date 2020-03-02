@@ -1,7 +1,6 @@
 # SQLMAP
 
-<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904473/sqlmap.jpg" width="200" height="200"/>
-
+![logo](https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904473/sqlmap.jpg)
 
 ## INDEX
 
@@ -14,16 +13,13 @@
   - [INSTALL](#install)
   - [LICENSE](#license)
 
-
 ## BADGES
 
 [![pipeline status](https://gitlab.com/oda-alexandre/sqlmap/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/sqlmap/commits/master)
 
-
 ## FIRST UPDATE
 
 Date: 01-01-01
-
 
 ## INTRODUCTION
 
@@ -39,16 +35,13 @@ Automatically updated on :
 
 - [docker hub public](https://hub.docker.com/r/alexandreoda/sqlmap/)
 
-
 ## PREREQUISITES
 
 Use [docker](https://www.docker.com)
 
-
 ## INSTALL
 
 ```docker run -ti --rm --name sqlmap -v ${HOME}:/home/sqlmap alexandreoda/sqlmap```
-
 
 ## LICENSE
 
