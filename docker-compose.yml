@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  sqlmap:
+    container_name: sqlmap
+    image: alexandreoda/sqlmap
+    restart: "no"
+    privileged: false
+    volumes:
+      - "${HOME}:/home/sqlmap"

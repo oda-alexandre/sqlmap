@@ -10,6 +10,7 @@
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
+    - [DOCKER RUN](#docker-run)
   - [LICENSE](#license)
 
 ## BADGES
@@ -24,7 +25,7 @@ Docker image of :
 
 Continuous integration on :
 
-- [gitlab](https://gitlab.com/oda-alexandre/android-studio/pipelines)
+- [gitlab pipelines](https://gitlab.com/oda-alexandre/android-studio/pipelines)
 
 Automatically updated on :
 
@@ -36,7 +37,24 @@ Use [docker](https://www.docker.com)
 
 ## INSTALL
 
+### DOCKER RUN
+
 ```docker run -ti --rm --name sqlmap -v ${HOME}:/home/sqlmap alexandreoda/sqlmap```
+
+### DOCKER COMPOSE
+
+```yml
+version: "3.7"
+
+services:
+  sqlmap:
+    container_name: sqlmap
+    image: alexandreoda/sqlmap
+    restart: "no"
+    privileged: false
+    volumes:
+      - "${HOME}:/home/sqlmap"
+```
 
 ## LICENSE
 
