@@ -11,6 +11,7 @@
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
     - [DOCKER RUN](#docker-run)
+    - [DOCKER COMPOSE](#docker-compose)
   - [LICENSE](#license)
 
 ## BADGES
@@ -40,7 +41,11 @@ Use [docker](https://www.docker.com)
 ### DOCKER RUN
 
 ```\
-docker  run -ti --rm --name sqlmap -v ${HOME}:/home/sqlmap alexandreoda/sqlmap```
+docker run -ti --rm \
+--name sqlmap \
+-v ${HOME}:/home/sqlmap \
+alexandreoda/sqlmap
+```
 
 ### DOCKER COMPOSE
 
